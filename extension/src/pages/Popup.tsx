@@ -12,7 +12,7 @@ const Popup = () => {
     { action: 'extractText', tabId: tab.id },
     async (response) => {
       if (response?.text) {
-        const res = await fetch('https://e4dda1d53cef.ngrok-free.app/check', {
+        const res = await fetch('https://fake-news-detector-extension.onrender.com/check', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ url: tab.url, text: response.text }),
