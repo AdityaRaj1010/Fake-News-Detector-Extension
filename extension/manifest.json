@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Fake News Detector Extension",
+  "version": "1.0",
+  "description": "Analyze articles for fake news.",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": ["tabs", "storage"],
+  "host_permissions": ["<all_urls>"]
+}
